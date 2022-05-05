@@ -6,6 +6,8 @@ public class DesktopGame {
 	public enum Gesture {rock,paper,scissors};
 
 	public static void main(String[] args) {
+		// hl: test to see a push will trigger a jenkins build.
+		System.out.println("a trivial change by Hao");
 
 		String prompt = "Will it be rock, paper or scissors?";
 		Score score = new Score();
@@ -37,7 +39,7 @@ public class DesktopGame {
 			for (GameSummary gameSummary : history) {
 				System.out.println(gameSummary);
 			}
-			
+
 		}
 	}
 }
